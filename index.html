@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12 Character Password Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="class2">Password Generator</h1>
+    <hr color="black">
+
+    <div id="container">
+        <form onsubmit="generatepassword(); return false;">
+            <h1 class="class1">Click to generate the password:</h1>
+
+            <label for="length">Enter length</label>
+            <input type="number" id="length" value="12" min="4" max="64">
+
+            <br><br>
+
+            <input type="checkbox" id="includelowercase" checked>
+            <label for="includelowercase">Include lowercase</label><br>
+
+            <input type="checkbox" id="includeuppercase" checked>
+            <label for="includeuppercase">Include uppercase</label><br>
+
+            <input type="checkbox" id="includenumbers" checked>
+            <label for="includenumbers">Include numbers</label><br>
+
+            <input type="checkbox" id="includesymbols">
+            <label for="includesymbols">Include symbols</label><br><br>
+
+            <input type="submit" value="Generate Password">
+            <p id="result"></p>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
